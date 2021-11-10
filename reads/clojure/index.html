@@ -1,0 +1,446 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Clojure &#8211; 🍉 Delay Line Memory</title>
+<meta name=description content="Clojure things">
+<meta name=author content="Santosh Heigrujam">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link href=/index.xml rel=alternate type=application/rss+xml title="🍉 Delay Line Memory">
+<meta name=ROBOTS content="INDEX, FOLLOW">
+<meta property="og:title" content="Clojure">
+<meta property="og:description" content="Clojure things">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://heisantosh.github.io/reads/clojure/"><meta property="article:section" content="reads">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Clojure">
+<meta name=twitter:description content="Clojure things">
+<meta itemprop=name content="Clojure">
+<meta itemprop=description content="Clojure things">
+<meta itemprop=wordCount content="2">
+<meta itemprop=keywords content>
+<link href=/css/custom.css rel=stylesheet>
+</head>
+<body>
+<header>
+<a href=https://heisantosh.github.io/ class=alternate>
+<h1>🍉 Delay Line Memory</h1>
+</a>
+<div class=social>
+<a href=/about/>About</a>
+<a href=https://github.com/heisantosh>Github</a>
+<a href=https://twitter.com/heisantosh>Twitter</a>
+<a href=/reads/>Reads</a>
+<a type=application/rss+xml href=/index.xml>RSS</a>
+</div>
+</header>
+<div class=post-header>
+<h2>Clojure</h2>
+</div>
+<article class=post-content>
+<p><p>Clojure things</p>
+</p>
+<ul class=hide-list>
+<li>
+<a href=http://pedestal.io/guides/what-is-an-interceptor>
+<img src="https://www.google.com/s2/favicons?domain=pedestal.io">
+What is an Interceptor?
+</a>
+</li>
+<li>
+<a href=https://vlaaad.github.io/reveal-repls-and-networking>
+<img src="https://www.google.com/s2/favicons?domain=vlaaad.github.io">
+Reveal, REPLs and networking
+</a>
+</li>
+<li>
+<a href=https://landofquil.clojureverse.org/>
+<img src="https://www.google.com/s2/favicons?domain=landofquil.clojureverse.org">
+Into the Land of Quil
+</a>
+</li>
+<li>
+<a href=https://blog.josephwilk.net/clojure/functions-explained-through-patterns.html>
+<img src="https://www.google.com/s2/favicons?domain=blog.josephwilk.net">
+Functions Explained Through Patterns
+</a>
+</li>
+<li>
+<a href=https://juxt.pro/blog/posts/logging.html>
+<img src="https://www.google.com/s2/favicons?domain=juxt.pro">
+Logging: change your mind
+</a>
+</li>
+<li>
+<a href=https://lambdaisland.com/blog/2019-12-08-advent-of-parens-8-everything-is-a-pipe>
+<img src="https://www.google.com/s2/favicons?domain=lambdaisland.com">
+Everything is (not) a pipe
+</a>
+</li>
+<li>
+<a href=https://gist.github.com/reborg/dc8b0c96c397a56668905e2767fd697f>
+<img src="https://www.google.com/s2/favicons?domain=gist.github.com">
+Rich Already Answered That!
+</a>
+</li>
+<li>
+<a href=https://dragan.rocks/articles/19/Billion-random-numbers-blink-eye-Clojure>
+<img src="https://www.google.com/s2/favicons?domain=dragan.rocks">
+Billions of Random Numbers in a Blink of an Eye
+</a>
+</li>
+<li>
+<a href=https://orestis.gr/clojure-unlocking-incremental-automation/>
+<img src="https://www.google.com/s2/favicons?domain=orestis.gr">
+Clojure: Unlocking incremental automation
+</a>
+</li>
+<li>
+<a href=https://adambard.com/blog/domain-modeling-with-clojure-spec/>
+<img src="https://www.google.com/s2/favicons?domain=adambard.com">
+Domain modelling with clojure.spec
+</a>
+</li>
+<li>
+<a href=https://clojure.org/about/rationale>
+<img src="https://www.google.com/s2/favicons?domain=clojure.org">
+Clojure Rationale
+</a>
+</li>
+<li>
+<a href=https://cjohansen.no/clojure-in-production-tools-deps/>
+<img src="https://www.google.com/s2/favicons?domain=cjohansen.no">
+Clojure in Production with tools.deps
+</a>
+</li>
+<li>
+<a href=https://juxt.pro/blog/posts/parsing-with-clojure-spec.html>
+<img src="https://www.google.com/s2/favicons?domain=juxt.pro">
+Parsing text with clojure.spec – The library that keeps on givin'
+</a>
+</li>
+<li>
+<a href=https://vimeo.com/313288415>
+<img src="https://www.google.com/s2/favicons?domain=vimeo.com">
+Effect-ive Clojure
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=b5UK-VHbJlQ">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Tables Considered Helpful - Daniel Gregoire
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=c52QhiXsmyI">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+REBL - Stuart Halloway
+</a>
+</li>
+<li>
+<a href=https://blog.taylorwood.io/2017/09/15/year-behind.html>
+<img src="https://www.google.com/s2/favicons?domain=blog.taylorwood.io">
+A Year in Clojure
+</a>
+</li>
+<li>
+<a href=https://blog.taylorwood.io/2018/05/02/graalvm-clojure.html>
+<img src="https://www.google.com/s2/favicons?domain=blog.taylorwood.io">
+Building native Clojure images with GraalVM
+</a>
+</li>
+<li>
+<a href=https://precursorapp.com/blog/clojure-is-a-product-design-tool>
+<img src="https://www.google.com/s2/favicons?domain=precursorapp.com">
+Clojure is a product design tool
+</a>
+</li>
+<li>
+<a href=https://github.com/ladderlife/autochrome>
+<img src="https://www.google.com/s2/favicons?domain=github.com">
+Structural diffs for clojure source code
+</a>
+</li>
+<li>
+<a href=https://8thlight.com/blog/colin-jones/2017/03/17/everybody-ooms.html>
+<img src="https://www.google.com/s2/favicons?domain=8thlight.com">
+Everybody OOMs
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=Qx0-pViyIDU">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Running With Scissors: Live Coding With Data by Stuart Halloway
+</a>
+</li>
+<li>
+<a href=https://medium.com/@hlship/clojure-owning-the-language-ec0196871c40>
+<img src="https://www.google.com/s2/favicons?domain=medium.com">
+Clojure: Owning the Language
+</a>
+</li>
+<li>
+<a href=https://adambard.com/blog/stream-processing-core-async/>
+<img src="https://www.google.com/s2/favicons?domain=adambard.com">
+One-box stream processing with CSP
+</a>
+</li>
+<li>
+<a href=https://stuartsierra.com/2016/clojure-how-to-ns.html>
+<img src="https://www.google.com/s2/favicons?domain=stuartsierra.com">
+How to ns
+</a>
+</li>
+<li>
+<a href=https://stuartsierra.com/2015/06/10/clojure-donts-heisenparameter>
+<img src="https://www.google.com/s2/favicons?domain=stuartsierra.com">
+Clojure Don’ts: The Heisenparameter
+</a>
+</li>
+<li>
+<a href=https://stuartsierra.com/2015/06/16/clojure-donts-single-branch-if>
+<img src="https://www.google.com/s2/favicons?domain=stuartsierra.com">
+Clojure Don’ts: Single-branch if
+</a>
+</li>
+<li>
+<a href=https://stuartsierra.com/2016/01/09/how-to-name-clojure-functions>
+<img src="https://www.google.com/s2/favicons?domain=stuartsierra.com">
+How to Name Clojure Functions
+</a>
+</li>
+<li>
+<a href=https://blog.vemv.net/when-i-dont-recommend-clojure-2597039536ce>
+<img src="https://www.google.com/s2/favicons?domain=blog.vemv.net">
+When I don’t recommend Clojure
+</a>
+</li>
+<li>
+<a href=https://devcenter.heroku.com/articles/debugging-clojure>
+<img src="https://www.google.com/s2/favicons?domain=devcenter.heroku.com">
+Live-Debugging Remote Clojure Apps with Drawbridge
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=wR2kYn-7ijQ">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+It's Just Data - Bob Calco
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=oOON--g1PyU">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Simplifying ETL with Clojure and Datomic - Stuart Halloway
+</a>
+</li>
+<li>
+<a href=https://vvvvalvalval.github.io/posts/2018-07-23-datascript-as-a-lingua-franca-for-domain-modeling.html>
+<img src="https://www.google.com/s2/favicons?domain=vvvvalvalval.github.io">
+DataScript as a Lingua Franca for domain modeling
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=BNkYYYyfF48">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Paul deGrandis - Unlocking data-driven systems
+</a>
+</li>
+<li>
+<a href=https://vvvvalvalval.github.io/posts/2018-01-06-so-yeah-about-clojures-syntax.html>
+<img src="https://www.google.com/s2/favicons?domain=vvvvalvalval.github.io">
+So yeah, about Clojure's syntax...
+</a>
+</li>
+<li>
+<a href=https://gist.github.com/reborg/dc8b0c96c397a56668905e2767fd697f>
+<img src="https://www.google.com/s2/favicons?domain=gist.github.com">
+Rich Already Answered That!
+</a>
+</li>
+<li>
+<a href=https://aphyr.com/posts/312-clojure-from-the-ground-up-modeling>
+<img src="https://www.google.com/s2/favicons?domain=aphyr.com">
+Clojure from the ground up: modeling
+</a>
+</li>
+<li>
+<a href=https://tonsky.me/blog/readable-clojure/>
+<img src="https://www.google.com/s2/favicons?domain=tonsky.me">
+Readable Clojure
+</a>
+</li>
+<li>
+<a href=https://clojure.org/about/state>
+<img src="https://www.google.com/s2/favicons?domain=clojure.org">
+Values and Change: Clojure’s approach to Identity and State
+</a>
+</li>
+<li>
+<a href=https://tonsky.me/blog/hiccup/>
+<img src="https://www.google.com/s2/favicons?domain=tonsky.me">
+Hiccup, Macros, API design, and magic
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2015/12/22/the-story-of-booting-mount/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+The Story of Booting Mount
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2015/11/24/clojure-libraries-in-the-matrix/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+Clojure Libraries in The Matrix
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2016/03/03/config-you-know-plus-some-love/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+Config You Know Plus Some Love
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2015/12/02/time-series-database-in-one-line-of-clojure/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+Time Series Database in One Line of Clojure
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2016/01/07/clojure-mindsets/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+Clojure Mindsets
+</a>
+</li>
+<li>
+<a href=https://www.dotkam.com/2016/04/20/the-way-nature-creates-things/>
+<img src="https://www.google.com/s2/favicons?domain=www.dotkam.com">
+The Way Nature Creates Things
+</a>
+</li>
+<li>
+<a href=https://aphyr.com/posts/340-reversing-the-technical-interview>
+<img src="https://www.google.com/s2/favicons?domain=aphyr.com">
+Reversing the technical interview
+</a>
+</li>
+<li>
+<a href=https://blog.skyliner.io/fourteen-months-with-clojure-beb8b3e4bf00>
+<img src="https://www.google.com/s2/favicons?domain=blog.skyliner.io">
+Fourteen Months with Clojure
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=K0Tsa3smr1w">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Inspiring a future Clojure editor with forgotten Lisp UX - Shaun Lebron
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=mXZxkpX5nt8">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Specter by Nathan Marz
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=SKJjmx9ukS4">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+James Turnbull - How I learned to stop being afraid and love the JVM
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=13cmHf_kt-Q">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Stuart Sierra - Components Just Enough Structure
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=iQwQXVM6oiY">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Zach Tellman - Predictably Fast Clojure
+</a>
+</li>
+<li>
+<a href=https://stuartsierra.com/2017/07/18/how-bout-that-start-up-time>
+<img src="https://www.google.com/s2/favicons?domain=stuartsierra.com">
+How ’bout that start-up time?
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=_Cf-STRvFy8">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Faster Delivery with Pedestal and Vase - Paul deGrandis
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=av9Xi6CNqq4">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Anthony Marcar - Clojure At Scale @WalmartLabs
+</a>
+</li>
+<li>
+<a href=https://augustl.com/blog/2016/datomic_the_most_innovative_db_youve_never_heard_of/>
+<img src="https://www.google.com/s2/favicons?domain=augustl.com">
+Datomic: The most innovative DB you've never heard of
+</a>
+</li>
+<li>
+<a href=https://blog.cognitect.com/blog/2017/3/24/3xeif9bxaom78qyzwssgwz1leuorh4>
+<img src="https://www.google.com/s2/favicons?domain=blog.cognitect.com">
+Living the Lean Startup with clojure.spec
+</a>
+</li>
+<li>
+<a href=https://augustl.com/blog/2013/zeromq_instead_of_http/>
+<img src="https://www.google.com/s2/favicons?domain=augustl.com">
+http://augustl.com/blog/2013/zeromq_instead_of_http/
+</a>
+</li>
+<li>
+<a href=https://oobaloo.co.uk/clojure-from-callbacks-to-sequences>
+<img src="https://www.google.com/s2/favicons?domain=oobaloo.co.uk">
+From Callbacks to Sequences
+</a>
+</li>
+<li>
+<a href=https://oobaloo.co.uk/clojure-abstraction-and-zeromq>
+<img src="https://www.google.com/s2/favicons?domain=oobaloo.co.uk">
+Clojure, Abstraction and ZeroMQ
+</a>
+</li>
+<li>
+<a href=https://clojure.org/reference/transducers>
+<img src="https://www.google.com/s2/favicons?domain=clojure.org">
+Transducers
+</a>
+</li>
+<li>
+<a href=https://adambard.com/blog/domain-modeling-with-clojure-spec/>
+<img src="https://www.google.com/s2/favicons?domain=adambard.com">
+Domain modelling with clojure.spec
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=VSdnJDO-xdg">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Clojure, Made Simple - Rich Hickey
+</a>
+</li>
+<li>
+<a href=https://www.lispcast.com/clojure-and-types>
+<img src="https://www.google.com/s2/favicons?domain=www.lispcast.com">
+Clojure vs. The Static Typing World
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=2V1FtfBDsLU">
+<img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
+Effective Programs - 10 Years of Clojure - Rich Hickey
+</a>
+</li>
+</ul>
+</article>
+<footer>
+</footer>
+<script></script>
+</body>
+</html>
