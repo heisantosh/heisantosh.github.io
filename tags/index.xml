@@ -1,13 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on 🍉 Delay Line Memory</title>
-    <link>https://heisantosh.github.io/tags/</link>
-    <description>Recent content in Tags on 🍉 Delay Line Memory</description>
-    <language>en-us</language>
-    
-        <atom:link href="https://heisantosh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
-</rss>
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Delay Line Memory</title><link>https://heisantosh.github.io/tags/</link><description>Recent content in Tags on Delay Line Memory</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 18 Jan 2026 10:00:00 +0530</lastBuildDate><atom:link href="https://heisantosh.github.io/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Concurrency</title><link>https://heisantosh.github.io/tags/concurrency/</link><pubDate>Sun, 18 Jan 2026 10:00:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/concurrency/</guid><description/></item><item><title>Go</title><link>https://heisantosh.github.io/tags/go/</link><pubDate>Sun, 18 Jan 2026 10:00:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/go/</guid><description/></item><item><title>Programming</title><link>https://heisantosh.github.io/tags/programming/</link><pubDate>Sun, 18 Jan 2026 10:00:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/programming/</guid><description/></item><item><title>Cli</title><link>https://heisantosh.github.io/tags/cli/</link><pubDate>Thu, 15 Jan 2026 14:30:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/cli/</guid><description/></item><item><title>Tools</title><link>https://heisantosh.github.io/tags/tools/</link><pubDate>Thu, 15 Jan 2026 14:30:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/tools/</guid><description/></item><item><title>Unix</title><link>https://heisantosh.github.io/tags/unix/</link><pubDate>Thu, 15 Jan 2026 14:30:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/unix/</guid><description/></item><item><title>Philosophy</title><link>https://heisantosh.github.io/tags/philosophy/</link><pubDate>Sat, 10 Jan 2026 09:15:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/philosophy/</guid><description/></item><item><title>Software-Design</title><link>https://heisantosh.github.io/tags/software-design/</link><pubDate>Sat, 10 Jan 2026 09:15:00 +0530</pubDate><guid>https://heisantosh.github.io/tags/software-design/</guid><description/></item></channel></rss>

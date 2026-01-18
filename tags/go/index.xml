@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on Delay Line Memory</title><link>https://heisantosh.github.io/tags/go/</link><description>Recent content in Go on Delay Line Memory</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 18 Jan 2026 10:00:00 +0530</lastBuildDate><atom:link href="https://heisantosh.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Understanding Go Context</title><link>https://heisantosh.github.io/blog/2026/01/18/understanding-go-context/</link><pubDate>Sun, 18 Jan 2026 10:00:00 +0530</pubDate><guid>https://heisantosh.github.io/blog/2026/01/18/understanding-go-context/</guid><description>&lt;p&gt;The &lt;code&gt;context&lt;/code&gt; package in Go is one of those features that seems simple at first but reveals its depth as you work with it more. It&amp;rsquo;s become essential for writing robust, concurrent Go programs.&lt;/p&gt;
+&lt;h2 id="what-problem-does-context-solve"&gt;What Problem Does Context Solve?&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;re building services, you often need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Cancel operations&lt;/strong&gt; when a request times out&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pass request-scoped values&lt;/strong&gt; through your call chain&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Set deadlines&lt;/strong&gt; for operations&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before context, developers passed around cancellation channels and deadline values manually. Context standardizes this.&lt;/p&gt;</description></item></channel></rss>

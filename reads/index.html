@@ -1,93 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
-
-  <title>Reads &#8211; 🍉 Delay Line Memory</title>
-
-  
-  <meta name="description" content="On computer software systems">
-  
-  <meta name="author" content="">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Hugo 0.154.5">
 
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="🍉 Delay Line Memory" />
+  <title>Reads - Delay Line Memory</title>
+  <meta name="description" content="On computer software systems">
+  <meta name="author" content="Santosh Heigrujam">
 
-  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  
+  <meta property="og:title" content="Reads">
+  <meta property="og:description" content="On computer software systems">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:1313/reads/">
 
-  <link href="/css/custom.css" rel="stylesheet">
+  
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/reads/index.xml" title="Delay Line Memory">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 
 <body>
-  <header>
-    <a href="https://heisantosh.github.io/" class="alternate">
-      <h1>🍉 Delay Line Memory</h1>
-    </a>
-    <div class="social">
-      <a href="/about/">About</a>
-      <a href="https://github.com/heisantosh">Github</a>
-      <a href="https://x.com/heisantosh">X</a>
-      <a href="/reads/">Reads</a>
-      <a type="application/rss+xml" href="/index.xml">RSS</a>
-    </div>
-  </header>
+  <header class="site-header">
+  <h1 class="site-title">
+    <a href="http://localhost:1313/">Delay Line Memory</a>
+  </h1>
+
+  <nav class="site-nav">
+    <a href="/about/">about</a>
+    <a href="/projects/">projects</a>
+
+    
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+      
+      <svg class="lamp-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        
+        <path d="M8 10 L16 10 L14 4 L10 4 Z" />
+        
+        <line x1="12" y1="10" x2="12" y2="16" />
+        
+        <path d="M9 16 L15 16 L15 18 L9 18 Z" />
+        
+        <line x1="6" y1="8" x2="4" y2="7" />
+        <line x1="18" y1="8" x2="20" y2="7" />
+        <line x1="5" y1="12" x2="3" y2="12" />
+        <line x1="19" y1="12" x2="21" y2="12" />
+      </svg>
+      
+      <svg class="lamp-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        
+        <path d="M8 10 L16 10 L14 4 L10 4 Z" />
+        
+        <line x1="12" y1="10" x2="12" y2="16" />
+        
+        <path d="M9 16 L15 16 L15 18 L9 18 Z" />
+        
+      </svg>
+    </button>
+  </nav>
+</header>
+
+<script>
+  function toggleTheme() {
+    var html = document.documentElement;
+    var currentTheme = html.getAttribute('data-theme');
+    var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  (function() {
+    var symbol = document.querySelector('.title-symbol');
+    if (symbol && symbol.getAttribute('data-mode') === 'random') {
+      var symbols = ['λ', '⊕', '¬', '▮', 'Δ', '⬚', '◊', '»'];
+      symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    }
+  })();
+</script>
 
 
-<h2>Reads</h2>
+  <main class="site-main">
+<header class="page-header">
+  <h1>Reads</h1>
+</header>
 
-<ul class="posts">
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/data/" class="post-link">
-      Data
-    </a>
+<ul class="post-list">
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/data/">Data</a>
+    </h2>
+    <div class="post-meta">
+</div>
+
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/golang/" class="post-link">
-      Go
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/golang/">Go</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Helpful resources for working with the Go programming language
+</p>
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/programming/" class="post-link">
-      Programming
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/programming/">Programming</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Insightful articles and examples to help you become a better software developer
+</p>
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/random/" class="post-link">
-      Random
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/random/">Random</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Interesting reads about a variety of topics
+</p>
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/tech/" class="post-link">
-      Technology
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/tech/">Technology</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Innovative ideas and thoughts about technology
+</p>
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/work/" class="post-link">
-      Work
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/work/">Work</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Advise for job and money things
+</p>
   </li>
-  
-  <li>
-    <a href="https://heisantosh.github.io/reads/writing/" class="post-link">
-      Writing
-    </a>
+  <li class="post-list-item">
+    <h2 class="post-list-title">
+      <a href="http://localhost:1313/reads/writing/">Writing</a>
+    </h2>
+    <div class="post-meta">
+  <span class="read-time">1 min read</span>
+</div>
+
+    <p class="post-summary">Resources for anyone interested in writing
+</p>
   </li>
-  
 </ul>
 
-  <footer>
-  </footer>
 
-  <script>
-  </script>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-links"><a href="https://github.com/heisantosh" target="_blank" rel="noopener noreferrer">github</a><a href="https://x.com/heisantosh" target="_blank" rel="noopener noreferrer">x (twitter)</a><a href="https://linkedin.com/in/santosh-heigrujam" target="_blank" rel="noopener noreferrer">linkedin</a>
+    <a href="/index.xml">rss</a>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2026 Santosh Heigrujam
+  </div>
+</footer>
+
 </body>
 </html>
-

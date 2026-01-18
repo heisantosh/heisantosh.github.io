@@ -1,388 +1,510 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="utf-8">
-
-  <title>Go &#8211; 🍉 Delay Line Memory</title>
-
-  
-  <meta name="description" content="Helpful resources for working with the Go programming language">
-  
-  <meta name="author" content="">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Hugo 0.154.5">
 
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="🍉 Delay Line Memory" />
+  <title>Go - Delay Line Memory</title>
+  <meta name="description" content="Helpful resources for working with the Go programming language
+">
+  <meta name="author" content="Santosh Heigrujam">
 
-  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  
+  <meta property="og:title" content="Go">
+  <meta property="og:description" content="Helpful resources for working with the Go programming language
+">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://heisantosh.github.io/reads/golang/">
 
-  <link href="/css/custom.css" rel="stylesheet">
+  
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 
 <body>
-  <header>
-    <a href="https://heisantosh.github.io/" class="alternate">
-      <h1>🍉 Delay Line Memory</h1>
-    </a>
-    <div class="social">
-      <a href="/about/">About</a>
-      <a href="https://github.com/heisantosh">Github</a>
-      <a href="https://x.com/heisantosh">X</a>
-      <a href="/reads/">Reads</a>
-      <a type="application/rss+xml" href="/index.xml">RSS</a>
-    </div>
+  <header class="site-header">
+  <h1 class="site-title">
+    <a href="https://heisantosh.github.io/">Delay Line Memory</a>
+  </h1>
+
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+
+    
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+      
+      <svg class="lamp-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        
+        <path d="M8 10 L16 10 L14 4 L10 4 Z" />
+        
+        <line x1="12" y1="10" x2="12" y2="16" />
+        
+        <path d="M9 16 L15 16 L15 18 L9 18 Z" />
+        
+        <line x1="6" y1="8" x2="4" y2="7" />
+        <line x1="18" y1="8" x2="20" y2="7" />
+        <line x1="5" y1="12" x2="3" y2="12" />
+        <line x1="19" y1="12" x2="21" y2="12" />
+      </svg>
+      
+      <svg class="lamp-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        
+        <path d="M8 10 L16 10 L14 4 L10 4 Z" />
+        
+        <line x1="12" y1="10" x2="12" y2="16" />
+        
+        <path d="M9 16 L15 16 L15 18 L9 18 Z" />
+        
+      </svg>
+    </button>
+  </nav>
+</header>
+
+<script>
+  function toggleTheme() {
+    var html = document.documentElement;
+    var currentTheme = html.getAttribute('data-theme');
+    var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  (function() {
+    var symbol = document.querySelector('.title-symbol');
+    if (symbol && symbol.getAttribute('data-mode') === 'random') {
+      var symbols = ['λ', '⊕', '¬', '▮', 'Δ', '⬚', '◊', '»'];
+      symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    }
+  })();
+</script>
+
+
+  <main class="site-main">
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Go</h1>
   </header>
 
+  <div class="post-content">
+    <p>Helpful resources for working with the Go programming language</p>
 
-<div class="post-header">
-  <h2>Go</h2>
-</div>
 
-<article class="post-content">
-  <p><p>Helpful resources for working with the Go programming language</p>
-</p>
-
-  <ul class="hide-list">
-  
-    <li>
-      <a href="https://rakyll.org/go-cloud/">
-        <img src="https://www.google.com/s2/favicons?domain=rakyll.org">
-        Go for Cloud
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://peter.bourgon.org/go-for-industrial-programming/">
-        <img src="https://www.google.com/s2/favicons?domain=peter.bourgon.org">
-        Go for Industrial Programming
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://opencredo.com/java-go-back/">
-        <img src="https://www.google.com/s2/favicons?domain=opencredo.com">
-        From Java to Go, and Back Again
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://rakyll.org/go-tool-flags/">
-        <img src="https://www.google.com/s2/favicons?domain=rakyll.org">
-        Go tooling essentials
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/">
-        <img src="https://www.google.com/s2/favicons?domain=jvns.ca">
-        Profiling Go programs with pprof
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=LHe1Cb_Ud_M">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Ways To Do Things
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://medium.com/smsjunk/an-in-depth-look-at-our-docker-and-ecs-stack-for-golang-b89dfe7cff5c">
-        <img src="https://www.google.com/s2/favicons?domain=medium.com">
-        An in-Depth look at our Docker and ECS stack for Golang
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=2s5l9ErNL3s">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Managing and Scaling Real Time Data Pipelines using Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/">
-        <img src="https://www.google.com/s2/favicons?domain=segment.com">
-        Allocation Efficiency in High-Performance Go Services
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=LHZ2CAZE6Gs">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Mastering io.Pipes
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://scene-si.org/2017/08/06/the-thing-about-slices/">
-        <img src="https://www.google.com/s2/favicons?domain=scene-si.org">
-        The thing about slices
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://faiface.github.io/post/how-i-built-audio-lib-composite-pattern/">
-        <img src="https://www.google.com/s2/favicons?domain=faiface.github.io">
-        How I built an audio library using the composite pattern and higher-order functions
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=5erqWdlhQLA">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        &#34;go test -race&#34; Under the Hood&#34; by Kavya Joshi
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://youtu.be/8hQG7QlcLBk">
-        <img src="https://www.google.com/s2/favicons?domain=youtu.be">
-        Mitchell Hashimoto - Advanced Testing with Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=KBZlN0izeiY">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Kavya Joshi - Understanding Channels
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://mijailovic.net/2017/07/29/go-fuzz/">
-        <img src="https://www.google.com/s2/favicons?domain=mijailovic.net">
-        Going down the rabbit hole with go-fuzz
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=T4AIQ4RHp-c">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Fatih Arslan - Writing a Go Tool to Parse and Modify Struct Tags
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://hackernoon.com/strace-in-60-lines-of-go-b4b76e3ecd64">
-        <img src="https://www.google.com/s2/favicons?domain=hackernoon.com">
-        Strace in 60 lines of Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=a9xrxRsIbSU">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Dmitry Vyukov - Go Dynamic Tools
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://blog.merovius.de/2017/06/18/how-not-to-use-an-http-router.html">
-        <img src="https://www.google.com/s2/favicons?domain=blog.merovius.de">
-        How to not use an http-router in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=hDC7IF3OQLM">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Effective Go Error Handling
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://dominik.honnef.co/posts/2016/10/go-and-strip/">
-        <img src="https://www.google.com/s2/favicons?domain=dominik.honnef.co">
-        Stripping Go ELF binaries is safe
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://medium.com/@peter.gtz/correct-error-handling-is-hard-307ea72759c7">
-        <img src="https://www.google.com/s2/favicons?domain=medium.com">
-        Correct Error Handling is Hard
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://www.seanhelvey.com/go-is-not-python/">
-        <img src="https://www.google.com/s2/favicons?domain=www.seanhelvey.com">
-        Better understand pointers
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.quora.com/How-does-the-golang-scheduler-work/answer/Ian-Lance-Taylor">
-        <img src="https://www.google.com/s2/favicons?domain=www.quora.com">
-        How does the golang scheduler work?
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://medium.com/capital-one-developers/closures-are-the-generics-for-go-cb32021fb5b5">
-        <img src="https://www.google.com/s2/favicons?domain=medium.com">
-        Closures are the Generics for Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://joeshaw.org/dont-defer-close-on-writable-files/">
-        <img src="https://www.google.com/s2/favicons?domain=joeshaw.org">
-        Don’t defer Close() on writable files
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://dave.cheney.net/2016/11/13/do-not-fear-first-class-functions">
-        <img src="https://www.google.com/s2/favicons?domain=dave.cheney.net">
-        Do not fear first class functions
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis">
-        <img src="https://www.google.com/s2/favicons?domain=dave.cheney.net">
-        Functional options for friendly APIs
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://dave.cheney.net/2016/04/07/constant-errors">
-        <img src="https://www.google.com/s2/favicons?domain=dave.cheney.net">
-        Constant errors
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://peter.bourgon.org/blog/2017/06/09/theory-of-modern-go.html">
-        <img src="https://www.google.com/s2/favicons?domain=peter.bourgon.org">
-        A theory of modern Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=PXoG0WX0r_E">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Implementing a bignum calculator - Rob Pike
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://medium.com/bumpers/our-go-is-fine-but-our-sql-is-great-b4857950a243">
-        <img src="https://www.google.com/s2/favicons?domain=medium.com">
-        Our Go is fine but our SQL is great
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://medium.com/go-walkthrough">
-        <img src="https://www.google.com/s2/favicons?domain=medium.com">
-        Go Walkthrough - A series of walkthroughs to help you understand the Go standard library better.
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://engineering.skroutz.gr/blog/rewriting-web-analytics-tracking-in-go/">
-        <img src="https://www.google.com/s2/favicons?domain=engineering.skroutz.gr">
-        Rewriting our web analytics tracking infrastructure in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://bepsays.com/en/2016/10/12/pragmatic-and-effective-testing-in-go/">
-        <img src="https://www.google.com/s2/favicons?domain=bepsays.com">
-        Pragmatic and Effective Testing in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://npf.io/2013/01/what-i-love-about-go/">
-        <img src="https://www.google.com/s2/favicons?domain=npf.io">
-        What I love about Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://npf.io/2014/03/go-tips-for-newbie-gophers/">
-        <img src="https://www.google.com/s2/favicons?domain=npf.io">
-        Go Tips for Newbie Gophers
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://xph.us/2016/06/24/package-versions-in-go.html">
-        <img src="https://www.google.com/s2/favicons?domain=xph.us">
-        Package Versions in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="http://marcio.io/2015/07/cheap-mapreduce-in-go/">
-        <img src="https://www.google.com/s2/favicons?domain=marcio.io">
-        Cheap MapReduce in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://npf.io/2016/10/reusable-commands/">
-        <img src="https://www.google.com/s2/favicons?domain=npf.io">
-        Writing Go Applications with Reusable Logic
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://blog.gopheracademy.com/advent-2016/exposing-go-on-the-internet/">
-        <img src="https://www.google.com/s2/favicons?domain=blog.gopheracademy.com">
-        So you want to expose Go on the Internet
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://blog.golang.org/examples">
-        <img src="https://www.google.com/s2/favicons?domain=blog.golang.org">
-        Testable Examples in Go
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://peter.bourgon.org/go-best-practices-2016/">
-        <img src="https://www.google.com/s2/favicons?domain=peter.bourgon.org">
-        Go best practices, six years in
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=lsBF58Q-DnY">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Dave Cheney - Dont Just Check Errors Handle Them Gracefully
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://www.youtube.com/watch?v=HxaD_trXwRE&amp;feature=youtu.be">
-        <img src="https://www.google.com/s2/favicons?domain=www.youtube.com">
-        Lexical Scanning in Go - Rob Pike
-      </a>
-    </li>
-  
-    <li>
-      <a href="https://golang.org/doc/codewalk/functions/">
-        <img src="https://www.google.com/s2/favicons?domain=golang.org">
-        First-Class Functions in Go
-      </a>
-    </li>
-  
-  </ul>
-
+    <ul class="link-list">
+      
+      <li>
+        <a href="https://rakyll.org/go-cloud/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=rakyll.org" alt="">
+          Go for Cloud
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://peter.bourgon.org/go-for-industrial-programming/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=peter.bourgon.org" alt="">
+          Go for Industrial Programming
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opencredo.com/java-go-back/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=opencredo.com" alt="">
+          From Java to Go, and Back Again
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://rakyll.org/go-tool-flags/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=rakyll.org" alt="">
+          Go tooling essentials
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=jvns.ca" alt="">
+          Profiling Go programs with pprof
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=LHe1Cb_Ud_M" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Ways To Do Things
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://medium.com/smsjunk/an-in-depth-look-at-our-docker-and-ecs-stack-for-golang-b89dfe7cff5c" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=medium.com" alt="">
+          An in-Depth look at our Docker and ECS stack for Golang
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=2s5l9ErNL3s" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Managing and Scaling Real Time Data Pipelines using Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=segment.com" alt="">
+          Allocation Efficiency in High-Performance Go Services
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=LHZ2CAZE6Gs" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Mastering io.Pipes
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scene-si.org/2017/08/06/the-thing-about-slices/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=scene-si.org" alt="">
+          The thing about slices
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://faiface.github.io/post/how-i-built-audio-lib-composite-pattern/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=faiface.github.io" alt="">
+          How I built an audio library using the composite pattern and higher-order functions
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=5erqWdlhQLA" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          &#34;go test -race&#34; Under the Hood&#34; by Kavya Joshi
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://youtu.be/8hQG7QlcLBk" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=youtu.be" alt="">
+          Mitchell Hashimoto - Advanced Testing with Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=KBZlN0izeiY" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Kavya Joshi - Understanding Channels
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://mijailovic.net/2017/07/29/go-fuzz/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=mijailovic.net" alt="">
+          Going down the rabbit hole with go-fuzz
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=T4AIQ4RHp-c" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Fatih Arslan - Writing a Go Tool to Parse and Modify Struct Tags
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://hackernoon.com/strace-in-60-lines-of-go-b4b76e3ecd64" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=hackernoon.com" alt="">
+          Strace in 60 lines of Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=a9xrxRsIbSU" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Dmitry Vyukov - Go Dynamic Tools
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://blog.merovius.de/2017/06/18/how-not-to-use-an-http-router.html" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=blog.merovius.de" alt="">
+          How to not use an http-router in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=hDC7IF3OQLM" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Effective Go Error Handling
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://dominik.honnef.co/posts/2016/10/go-and-strip/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=dominik.honnef.co" alt="">
+          Stripping Go ELF binaries is safe
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://medium.com/@peter.gtz/correct-error-handling-is-hard-307ea72759c7" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=medium.com" alt="">
+          Correct Error Handling is Hard
+        </a>
+      </li>
+      
+      <li>
+        <a href="http://www.seanhelvey.com/go-is-not-python/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.seanhelvey.com" alt="">
+          Better understand pointers
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.quora.com/How-does-the-golang-scheduler-work/answer/Ian-Lance-Taylor" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.quora.com" alt="">
+          How does the golang scheduler work?
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://medium.com/capital-one-developers/closures-are-the-generics-for-go-cb32021fb5b5" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=medium.com" alt="">
+          Closures are the Generics for Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://joeshaw.org/dont-defer-close-on-writable-files/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=joeshaw.org" alt="">
+          Don’t defer Close() on writable files
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://dave.cheney.net/2016/11/13/do-not-fear-first-class-functions" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=dave.cheney.net" alt="">
+          Do not fear first class functions
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=dave.cheney.net" alt="">
+          Functional options for friendly APIs
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://dave.cheney.net/2016/04/07/constant-errors" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=dave.cheney.net" alt="">
+          Constant errors
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://peter.bourgon.org/blog/2017/06/09/theory-of-modern-go.html" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=peter.bourgon.org" alt="">
+          A theory of modern Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=PXoG0WX0r_E" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Implementing a bignum calculator - Rob Pike
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://medium.com/bumpers/our-go-is-fine-but-our-sql-is-great-b4857950a243" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=medium.com" alt="">
+          Our Go is fine but our SQL is great
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://medium.com/go-walkthrough" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=medium.com" alt="">
+          Go Walkthrough - A series of walkthroughs to help you understand the Go standard library better.
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://engineering.skroutz.gr/blog/rewriting-web-analytics-tracking-in-go/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=engineering.skroutz.gr" alt="">
+          Rewriting our web analytics tracking infrastructure in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://bepsays.com/en/2016/10/12/pragmatic-and-effective-testing-in-go/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=bepsays.com" alt="">
+          Pragmatic and Effective Testing in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://npf.io/2013/01/what-i-love-about-go/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=npf.io" alt="">
+          What I love about Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://npf.io/2014/03/go-tips-for-newbie-gophers/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=npf.io" alt="">
+          Go Tips for Newbie Gophers
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://xph.us/2016/06/24/package-versions-in-go.html" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=xph.us" alt="">
+          Package Versions in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="http://marcio.io/2015/07/cheap-mapreduce-in-go/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=marcio.io" alt="">
+          Cheap MapReduce in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://npf.io/2016/10/reusable-commands/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=npf.io" alt="">
+          Writing Go Applications with Reusable Logic
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://blog.gopheracademy.com/advent-2016/exposing-go-on-the-internet/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=blog.gopheracademy.com" alt="">
+          So you want to expose Go on the Internet
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://blog.golang.org/examples" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=blog.golang.org" alt="">
+          Testable Examples in Go
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://peter.bourgon.org/go-best-practices-2016/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=peter.bourgon.org" alt="">
+          Go best practices, six years in
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=lsBF58Q-DnY" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Dave Cheney - Dont Just Check Errors Handle Them Gracefully
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.youtube.com/watch?v=HxaD_trXwRE&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=www.youtube.com" alt="">
+          Lexical Scanning in Go - Rob Pike
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://golang.org/doc/codewalk/functions/" target="_blank" rel="noopener noreferrer">
+          <img class="favicon" src="https://www.google.com/s2/favicons?domain=golang.org" alt="">
+          First-Class Functions in Go
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 </article>
 
-  <footer>
-  </footer>
+<style>
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .link-list li {
+    margin-bottom: 0.75rem;
+  }
+  .link-list a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .link-list a:hover {
+    color: var(--accent);
+  }
+  .favicon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+  }
+</style>
 
-  <script>
-  </script>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-social">
+    <a href="https://github.com/heisantosh" title="GitHub" rel="me">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+    <a href="https://x.com/heisantosh" title="X (Twitter)" rel="me">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <a href="https://linkedin.com/in/santosh-heigrujam" title="LinkedIn" rel="me">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    </a>
+    <a href="/index.xml" title="RSS Feed">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2026 Santosh Heigrujam
+  </div>
+</footer>
+
 </body>
 </html>
-

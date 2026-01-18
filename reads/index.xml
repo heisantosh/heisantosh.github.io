@@ -1,13 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reads on 🍉 Delay Line Memory</title>
-    <link>https://heisantosh.github.io/reads/</link>
-    <description>Recent content in Reads on 🍉 Delay Line Memory</description>
+    <title>Reads on Delay Line Memory</title>
+    <link>http://localhost:1313/reads/</link>
+    <description>Recent content in Reads on Delay Line Memory</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    
-        <atom:link href="https://heisantosh.github.io/reads/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/reads/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>http://localhost:1313/reads/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/reads/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/golang/</guid>
+      <description>&lt;p&gt;Helpful resources for working with the Go programming language&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/reads/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/programming/</guid>
+      <description>&lt;p&gt;Insightful articles and examples to help you become a better software developer&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Random</title>
+      <link>http://localhost:1313/reads/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/random/</guid>
+      <description>&lt;p&gt;Interesting reads about a variety of topics&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/reads/tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/tech/</guid>
+      <description>&lt;p&gt;Innovative ideas and thoughts about technology&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Work</title>
+      <link>http://localhost:1313/reads/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/work/</guid>
+      <description>&lt;p&gt;Advise for job and money things&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Writing</title>
+      <link>http://localhost:1313/reads/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/reads/writing/</guid>
+      <description>&lt;p&gt;Resources for anyone interested in writing&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
-
