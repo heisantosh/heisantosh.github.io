@@ -21,12 +21,12 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Good abstractions are invisible. Bad abstractions are constant friction. After building and maintaining software for a while, I&amp;rsquo;ve developed some intuitions about what makes the difference.&lt;/p&gt;
 &lt;h2 id="the-leaky-abstraction-problem"&gt;The Leaky Abstraction Problem&lt;/h2&gt;
-&lt;p&gt;Joel Spolsky coined &amp;ldquo;The Law of Leaky Abstractions&amp;rdquo; - all non-trivial abstractions leak. But some leak less than others. The goal isn&amp;rsquo;t perfection; it&amp;rsquo;s minimizing how often users need to understand the underlying implementation.&lt;/p&gt;</description></item><item><title>about</title><link>https://heisantosh.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://heisantosh.github.io/about/</guid><description>&lt;p&gt;My name is &lt;strong&gt;Santosh Heigrujam&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Joel Spolsky coined &amp;ldquo;The Law of Leaky Abstractions&amp;rdquo; - all non-trivial abstractions leak. But some leak less than others. The goal isn&amp;rsquo;t perfection; it&amp;rsquo;s minimizing how often users need to understand the underlying implementation.&lt;/p&gt;</description></item><item><title>about</title><link>https://heisantosh.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://heisantosh.github.io/about/</guid><description>&lt;p&gt;Hi, I&amp;rsquo;m &lt;strong&gt;Santosh Heigrujam&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Currently, I&amp;rsquo;m working on cloud infrastructure tooling at Microsoft Azure. In one of my previous roles, I work on the backend powering &lt;code&gt;npm&lt;/code&gt; at GitHub, and improving developer experiences on the website.&lt;/p&gt;
 &lt;p&gt;Recently, I have been practing using Rust in distributed systems.&lt;/p&gt;
 &lt;p&gt;You can find me on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/heisantosh"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://linkedin.com/in/santosh-heigrujam"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://x.com/heisantosh"&gt;X (Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="santosh.hei@gmail.com"&gt;santosh.hei@gmail.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
